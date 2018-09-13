@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.FrameLayout;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     // khai báo các fragment se hiện thị
@@ -17,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main2);
         home = new HomeFragment();
         news = new NewsFragment();
+        show();
     }
 
     public void showHomeActivity(View view) {
@@ -61,4 +63,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
     ///chinh sua
+    public void show(){
+        Toast.makeText(this, "teast", Toast.LENGTH_SHORT).show();
+    }
 }
